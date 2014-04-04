@@ -1,8 +1,8 @@
 with Ada.Text_IO; use Ada.Text_IO;
-package body Printer is
+package body Fields is
   -- Clear screen and print new field
   -- Takes a field (2D array of Characters) and prints to console
-  procedure Print_Field(Chars : Field) is
+  procedure Print(Chars : Field) is
   begin
     Put(ASCII.ESC & "[2J"); -- clears screen, move cursor top left.
     for I in Chars'Range(1) loop
@@ -11,5 +11,5 @@ package body Printer is
       end loop;
       New_Line;
     end loop;
-  end Print_Field;
-end Printer;
+  end Print;
+end Fields;

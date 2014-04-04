@@ -1,4 +1,4 @@
-package Printer is
+package Fields is
   type Field is array (Positive range <>, Positive range <>) of Character;
-  procedure Print_Field(Chars : Field);
-end Printer;
+  procedure Print(Chars : Field);
+end Fields;
